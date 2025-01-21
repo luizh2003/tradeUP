@@ -22,15 +22,12 @@ $cep=mysqli_fetch_assoc($querycep);
                         <div class="col-md-6 mb-2">
                             <label for="validationCustom0001">Digite o CEP *</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="cep" 
-                                value="<?php if(!empty($cep['id_cep'])) echo $cep['cep'];?>" required>
+                                <input type="text" class="form-control" name="cep" required>
                             </div>
                         </div>    
 
                         <div class="col-md-12 mb-12">
-                    		<button class="btn btn-primary d-inline w-20" name="submitButton" type="submit">
-							<?php if(empty($cep['id_cep'])) echo 'Cadastrar'; 
-							else echo 'Alterar';?></button>   
+                    		<button class="btn btn-primary d-inline w-20" name="submitButton" type="submit">Cadastrar CEP</button>   
                         </div>
 					</div>
 				</div>
